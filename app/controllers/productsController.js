@@ -2,7 +2,7 @@ import Product from "../models/Product.js";
 import Category from "../models/Category.js";
 
 export const createNewCategory = async (req,res) => {
-    let {name } = req.boby;
+    let {name } = req.body;
 
     const newCategory = new Category({
         name: name
