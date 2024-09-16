@@ -4,7 +4,7 @@ import Category from "../models/Category.js";
 // Function to create a new category
 export const createNewCategory = async (req, res) => {
     try {
-        // Fixed typo: Changed req.boby to req.body
+      
         let { name } = req.body;
 
         // Create new category
