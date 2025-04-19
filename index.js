@@ -25,7 +25,7 @@ app.get('/' ,(req,res) => {
 // Auth Routes
 app.use("/api/v1/user", AuthRoutes);
 app.use("/api/v1/product", ProductRouter);
-
+//strarting server
 const startServer = async () => {
     try{
        const PORT = process.env.PORT || 9000;
@@ -35,6 +35,7 @@ const startServer = async () => {
        app.listen(PORT, () => {
          console.log(` Server is listing on port : ${PORT}`);
        })
+        //catching error
     } catch(error) {
        console.log(error);
        exit(1)
